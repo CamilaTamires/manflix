@@ -14,3 +14,7 @@ class MoviesView(ModelViewSet):
 class PlansView(ModelViewSet):
     queryset = Plans.objects.all()
     serializer_class = PlansSerializer
+
+class FavoriteMoviesView(ModelViewSet):
+    queryset = FavoriteMovies.objects.all()
+    serializer_class = FavoriteMoviesSerializer
